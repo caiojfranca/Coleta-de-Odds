@@ -96,7 +96,7 @@ def all_links():
 odds = []
 casa = []
 falhas = []
-def Função_salvadora(x):
+def coleta(x):
         try:
             driver.get(x)
             html = driver.page_source
@@ -178,5 +178,5 @@ all_links()
 contador = 0
 for i in todos_links:
     contador += 1
-    Função_salvadora(i)
+    coleta(i)
 
